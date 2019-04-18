@@ -18,4 +18,10 @@ public class DemoConfiguration {
   public EmailService linuxEmailerService(){
     return new LinuxEmailService();
   }
+
+  @Bean(name="emailerService")
+  @Conditional(MacCondition.class)
+  public EmailService macEmailerService(){
+    return new LinuxEmailService();
+  }
 }
