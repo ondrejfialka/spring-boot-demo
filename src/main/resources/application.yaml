@@ -1,0 +1,12 @@
+management:
+  security:
+    enabled: false
+
+server:
+  port: 8090
+
+info:
+  app:
+    name: Spring Boot Sample Application
+    description: Just testing some features...
+    version: 1.0.0
